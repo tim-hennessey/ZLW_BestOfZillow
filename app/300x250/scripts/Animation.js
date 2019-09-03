@@ -38,34 +38,34 @@ app.Animation = (function () {
 		tl1.to(txt1a, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 		.to(txt1b, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 
-		.to(txt1a, .5, {opacity: 0}, "+=2")
+		.to(txt1a, .5, {opacity: 0}, "+=1.5")
 		.to(txt1b, .5, {opacity: 0}, "-=.5")
 
 		.to(txt2a, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 		.to(txt2b, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 
-		.to(txt2a, .5, {opacity: 0}, "+=2")
+		.to(txt2a, .5, {opacity: 0}, "+=1.5")
 		.to(txt2b, .5, {opacity: 0}, "-=.5")
 
 		.to(txt3a, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 		.to(txt3b, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 
-		.to(txt3a, .5, {opacity: 0}, "+=2")
+		.to(txt3a, .5, {opacity: 0}, "+=1.5")
 		.to(txt3b, .5, {opacity: 0}, "-=.5")
 
 		.to(txt4a, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 		.to(txt4b, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 
-		.to(curtain, .75, {opacity: 1, onComplete: function () {tl2.play();}}, "+=2")
+		.to(curtain, .75, {opacity: 1, onComplete: function () {tl2.play();}}, "+=1.5")
 
 		.to(flag, 1.5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 
 		.to(txt5a, .75, {y:"+=10", opacity: 1, ease: Sine.easeInOut}, "-=1")
 		.to(txt5b, .75, {y:"+=10", opacity: 1, ease: Sine.easeInOut}, "-=.25")
 
-		.to(txt6, 1.5, {y:"+=10", opacity: 1, ease: Sine.easeInOut}, "-=1.5")
+		.to(txt6, 1.5, {y:"+=10", opacity: 1, ease: Sine.easeInOut}, "-=.5")
 
-		.from(cta, 1, {scale: 0, opacity: 0, ease: Elastic.easeInOut}, "-=.25");
+		.from(cta, .5, {scale: 0, opacity: 0, ease: Sine.easeInOut}, "-=.25");
 
 		tl2.to(flag, 0.1, {display: "block"})
 		.to(sprite, 1, {x: -1824, ease: SteppedEase.config(24)});
