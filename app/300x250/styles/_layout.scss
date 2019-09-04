@@ -22,9 +22,11 @@ body {
         position: absolute;
     }
 
-    #resolve {
-        top:0;
+    .resolve {
         position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
     }
 
     .txt {
@@ -58,8 +60,8 @@ body {
     }
 
     .container {
-        width: 202px;
-        height:222px;
+        width: 77px;
+        height:100px;
         overflow: hidden;
         position: absolute;
         left: 43px;

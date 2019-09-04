@@ -20,8 +20,8 @@ app.Animation = (function () {
 	var txt5b = document.getElementById('txt5b');
 	var cta = document.getElementById('cta');
 	var curtain = document.getElementById('curtain');
-	var resolve = document.getElementById('resolve');
 	var flag = document.getElementById('flag');
+	var resolve = document.getElementsByClassName("resolve");
 
 	// --------------------------------------------------------------------------------------
 	// set default properties
@@ -29,6 +29,9 @@ app.Animation = (function () {
 		// DO NOT EDIT: reveals banner once loaded
 		t.set(banner, {opacity:1});
 		t.set(cta, {transformOrigin: "50% 80%"});
+		t.set(txt5a, {opacity:0});
+		t.set(txt5b, {opacity:0});
+		t.set(txt6, {opacity:0});
 	}
 
 	// --------------------------------------------------------------------------------------
@@ -57,6 +60,8 @@ app.Animation = (function () {
 		.to(txt4b, .5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 
 		.to(curtain, .75, {opacity: 1, onComplete: function () {tl2.play();}}, "+=1.5")
+
+		.set(resolve, {display: "block"})
 
 		.to(flag, 1.5, {y:"+=10", opacity: 1, ease: Sine.easeInOut})
 
