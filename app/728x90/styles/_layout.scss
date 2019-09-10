@@ -18,13 +18,14 @@ body {
     opacity: 0;
 
     #bg {
+        left:0;
         bottom:0;
         position: absolute;
     }
 
     .resolve {
         position: absolute;
-        top: 0;
+        top: -10px;
         left: 0;
         display: none;
     }
@@ -50,17 +51,16 @@ body {
     }
 
     #flag {
-
         display: none;
     }
 
     .container {
-        width: 53px;
-        height:69px;
+        width: 39px;
+        height:51px;
         overflow: hidden;
         position: absolute;
-        left: 7px;
-        top: 207px;
+        left: 25px;
+        top: 20px;
     }
 
     #button-exit {
