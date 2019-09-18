@@ -24,7 +24,7 @@ body {
 
     .resolve {
         position: absolute;
-        top: 0;
+        top: -10px;
         left: 0;
         display: none;
     }
@@ -55,12 +55,12 @@ body {
     }
 
     .container {
-        width: 53px;
-        height:69px;
+        width: 105px;
+        height: 138px;
         overflow: hidden;
         position: absolute;
-        left: 7px;
-        top: 207px;
+        left: -17px;
+        top: 168px;
     }
 
     #button-exit {

@@ -26,6 +26,7 @@ app.Animation = (function () {
 	var curtain = document.getElementById('curtain');
 	var flag = document.getElementById('flag');
 	var resolve = document.getElementsByClassName("resolve");
+	var container = document.getElementsByClassName("container");
 
 	// --------------------------------------------------------------------------------------
 	// set default properties
@@ -37,6 +38,7 @@ app.Animation = (function () {
 		t.set(txt5b, {opacity:0});
 		t.set(txt6a, {opacity:0});
 		t.set(txt6b, {opacity:0});
+		t.set(container, {scale:.5});
 	}
 
 	// --------------------------------------------------------------------------------------
@@ -82,7 +84,7 @@ app.Animation = (function () {
 		.from(cta, .5, {scale: 0, opacity: 0, ease: Sine.easeInOut}, "-=.25");
 
 		tl2.to(flag, 0.1, {display: "block"})
-		.to(sprite, 1, {x: -1272, ease: SteppedEase.config(24)});
+		.to(sprite, 1, {x: -2520, ease: SteppedEase.config(24)});
 		
 	}
 
